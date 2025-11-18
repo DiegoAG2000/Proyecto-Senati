@@ -1,0 +1,7 @@
+*{box-sizing:border-box}
+body{font-family:Arial, sans-serif;padding:12px}
+.card{border-radius:8px;border:1px solid #ddd}
+@media (max-width:600px){
+  header .nav {flex-direction: column;}
+}
+
