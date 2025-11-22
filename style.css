@@ -1,0 +1,109 @@
+/* ----------------------------------------- */
+/* RESETEO BÁSICO */
+/* ----------------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 12px;
+}
+
+/* ----------------------------------------- */
+/* ENCABEZADO */
+/* ----------------------------------------- */
+header {
+  background: linear-gradient(90deg, #0053a6, #002e63);
+  color: white;
+  border-bottom: 4px solid #001a39;
+}
+
+nav .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------- */
+/* TIPOGRAFÍA */
+/* ----------------------------------------- */
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+/* ----------------------------------------- */
+/* TARJETAS DE SERVICIO */
+/* ----------------------------------------- */
+.service-card {
+  border-radius: 12px;
+  background: white;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform .3s;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* ----------------------------------------- */
+/* LOGO */
+/* ----------------------------------------- */
+.logo-img {
+  border: 3px solid white;
+  padding: 3px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+/* ----------------------------------------- */
+/* BOTONES FLOTANTES */
+/* ----------------------------------------- */
+.botones-flotantes {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.btn-flotante {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-flotante:hover {
+  transform: scale(1.12);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+}
+
+.btn-flotante img {
+  width: 32px;
+  height: 32px;
+}
+
+/* ----------------------------------------- */
+/* RESPONSIVE */
+/* ----------------------------------------- */
+@media (max-width:600px){
+  header .nav {
+    flex-direction: column;
+  }
+}
+
